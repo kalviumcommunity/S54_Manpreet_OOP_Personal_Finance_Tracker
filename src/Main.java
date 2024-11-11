@@ -17,6 +17,10 @@ public class Main {
         System.out.println("Total Investments Created: " + Investment.getTotalCreated());
         System.out.println("Total Investments Deleted: " + Investment.getTotalDeleted());
 
+        // Creating a user and displaying user details
+        User user = new User("john_doe", "john@example.com", "securepassword");
+        user.displayUserDetails();
+
         // Forcing garbage collection (to trigger finalize() and simulate deletion)
         System.gc();
 
