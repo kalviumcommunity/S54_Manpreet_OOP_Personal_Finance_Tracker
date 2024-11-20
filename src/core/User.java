@@ -1,7 +1,6 @@
 package core;
 
 public class User {
-    // Encapsulated fields
     private String username;
     private String email;
     private String password;
@@ -13,7 +12,7 @@ public class User {
         this.password = password;
     }
 
-    // Getter and Setter for username
+    // Getters and Setters
     public String getUsername() {
         return username;
     }
@@ -22,7 +21,6 @@ public class User {
         this.username = username;
     }
 
-    // Getter and Setter for email
     public String getEmail() {
         return email;
     }
@@ -31,7 +29,6 @@ public class User {
         this.email = email;
     }
 
-    // Getter and Setter for password
     public String getPassword() {
         return password;
     }
@@ -40,8 +37,14 @@ public class User {
         this.password = password;
     }
 
-    // Method to display user details (abstraction)
+    // Display user details (abstraction)
     public void displayUserDetails() {
-        System.out.println("User: " + username + "\nEmail: " + email);
+        System.out.println("User: " + username);
+        System.out.println("Email: " + email);
+    }
+
+    // Check password validity (simple validation)
+    public boolean isValidPassword(String inputPassword) {
+        return password.equals(inputPassword);
     }
 }

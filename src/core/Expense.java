@@ -6,8 +6,7 @@ public class Expense extends Transaction {
     }
 
     @Override
-    public void displayTransactionDetails() {
-        System.out.println("[Expense]");
-        super.displayTransactionDetails();
+    public String getTransactionType() {
+        return "Expense";
     }
 }

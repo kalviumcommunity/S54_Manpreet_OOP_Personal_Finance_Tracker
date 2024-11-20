@@ -6,8 +6,7 @@ public class Income extends Transaction {
     }
 
     @Override
-    public void displayTransactionDetails() {
-        System.out.println("[Income]");
-        super.displayTransactionDetails();
+    public String getTransactionType() {
+        return "Income";
     }
 }
